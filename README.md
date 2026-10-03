@@ -1,88 +1,75 @@
-# NovaTech Revenue Intelligence Dashboard
+# AI-Powered Market Intelligence Agent
 
-## Cross-Functional Business Intelligence in Amazon Quick
+## Amazon India Consumer Electronics Competitive Positioning
 
-This case study presents a three-sheet revenue-intelligence solution integrating marketing, sales, and customer-support data. The dashboard was designed to help leadership evaluate funnel efficiency, pipeline performance, and customer health while maintaining strict controls around join fan-out and metric interpretation.
+This case study demonstrates a no-code, AI-assisted market-intelligence workflow designed in Amazon QuickSuite. The workflow combines product-level marketplace data with external research, converts the evidence into decision-relevant insights, and explicitly evaluates confidence, limitations, and risk.
 
-![Marketing Funnel dashboard](images/dashboard-1.png)
+![Quick Research output and supporting visual](05_Quick_Research_Output_and_Visual.png)
 
-## Business problem
+## Business question
 
-NovaTech needed a consolidated analytical view across disconnected CRM, marketing, and support datasets. The core challenge was not merely visualizing the data; it was preserving authoritative business totals while enabling valid cross-domain analysis.
+How should a consumer-electronics seller position its products on Amazon India based on category conditions, price and discount patterns, customer ratings, review activity, and current competitive signals?
 
-## Data model
+## Scope
 
-| Source | Source rows | Prepared columns | Business calculation |
-|---|---:|---:|---|
-| CRM deals | 499 | 21 | Days to Close |
-| Marketing campaigns | 2,240 | 21 | Campaign ROI |
-| Support tickets | 3,000 | 21 | Resolution Hours |
-| Unified dataset | 63,420 | 63 | Source calculations retained |
+Included:
 
-CRM was used as the anchor, with Marketing and Support left-joined on `account_id`. Multiple records per account produced many-to-many fan-out. Consequently, source datasets remained authoritative for additive totals, while the unified dataset was limited to matched-account relationships and distinct-identifier analysis.
+- Consumer-electronics products represented in the Kaggle Amazon Sales Dataset
+- Product prices, discounts, ratings, rating counts, categories, and review signals
+- External evidence concerning Indian e-commerce and consumer-electronics conditions
+- Competitive positioning, customer expectations, and category opportunities
 
-## Dashboard design
+Excluded:
 
-### Marketing Funnel
+- Verified unit sales, revenue, profitability, inventory, and market share
+- Individual customer demographics
+- Causal claims that discounts create sales
+- Long-term forecasting unsupported by the available snapshot data
 
-- Lead volume and response rate
-- Campaign spend and attributed revenue
-- Channel and campaign comparisons
-- Campaign ROI analysis
+## Workflow
 
-### Sales Pipeline
-
-- Deal value and opportunity volume
-- Won-versus-lost outcomes
-- Regional performance
-- Sales-cycle duration and monthly close trends
-
-![Sales Pipeline dashboard](images/dashboard-2.png)
-
-### Customer Health
-
-- Ticket volume and resolution time
-- Sentiment and priority distribution
-- Customer-tier comparisons
-- Navigation from regional sales analysis
-
-![Customer Health dashboard](images/dashboard-3.png)
+1. Defined the leadership decision, research objective, scope, and non-goals.
+2. Uploaded the Kaggle dataset as the internal knowledge source in Amazon QuickSuite.
+3. Used Quick Research to collect external market and competitor signals.
+4. Directed a custom Market Intelligence Agent to synthesize internal and external evidence.
+5. Produced three-to-five decision-relevant insights with strategic implications.
+6. Evaluated each insight for source quality, consistency, timeliness, confidence, and limitations.
+7. Organized the dataset, research, analysis, evidence, and final brief in a QuickSuite Space.
 
 ## Key findings
 
-- Marketing efficiency required validation: attributed revenue was materially below recorded spend across all six campaigns. Attribution logic and spend allocation should be validated before budgets are increased.
-- Sales outcomes were comparatively strong: the CRM source contained 315 Won and 184 Lost opportunities, a 63.1% win rate.
-- Regional process performance differed: the West averaged 70.09 days to close versus 62.87 days in the East, indicating a process-review opportunity rather than proof of a causal regional disadvantage.
-- Critical Enterprise support tickets averaged materially longer resolution time than Basic tickets, supporting deeper root-cause analysis of complexity, escalation paths, and staffing.
+- Ratings and review depth provide a stronger differentiation signal than discounting alone in commoditized accessory categories.
+- Catalog quality and specification accuracy are material positioning risks because inconsistent listing data can weaken buyer confidence and analytical reliability.
+- Premium product positioning requires value proof through service, financing, warranty, installation, or ecosystem benefits rather than price alone.
+- Several conclusions remain directional because the dataset is a static marketplace snapshot and does not contain verified sales volume or competitor market share.
 
-## Analytical controls
+## Reliability controls
 
-- Validated source data before import
-- Loaded three source datasets into SPICE
-- Reviewed field types and calculated fields
-- Used distinct identifiers for joined relationship analysis
-- Documented many-to-many join limitations
-- Avoided causal claims unsupported by the observational data
-- Enriched the natural-language Topic with descriptions, synonyms, filters, and outcome definitions
+- Evidence was separated into internal dataset signals and external research signals.
+- Rating count was treated as an engagement or popularity proxy, not as sales.
+- Source quality, cross-source consistency, signal timeliness, and confidence were assessed separately for each major insight.
+- Explicit non-conclusions prevent correlation from being presented as causation.
+
+![Positioning opportunities and confidence assessment](08_Positioning_Opportunities_and_Confidence.png)
 
 ## Deliverables
 
-- [Three-sheet dashboard](docs/NovaTech_Revenue_Intelligence_Dashboard.pdf)
-- [Project report](docs/NovaTech_Revenue_Intelligence_Project_Report.pdf)
-- Dashboard previews in the `images` directory
+- [Leadership-ready market intelligence brief](Amazon_India_Market_Intelligence_Final_Brief.pdf)
+- Selected workflow evidence included in the repository
+- [Original Kaggle dataset page](https://www.kaggle.com/datasets/karkavelrajaj/amazon-sales-dataset)
 
 ## Tools and methods
 
-Amazon Quick, SPICE, calculated fields, dataset joins, dashboard design, interactive filters, navigation actions, natural-language BI Topic configuration, metric validation
+Amazon QuickSuite, Quick Research, custom AI agent configuration, Kaggle data, competitive analysis, evidence synthesis, confidence assessment, executive communication
 
 ## Skills demonstrated
 
-Business intelligence · Data modeling · Dashboard design · KPI development · Data validation · Analytical governance · Executive reporting
+Market intelligence · Competitive analysis · Generative AI · Research design · Data interpretation · Risk assessment · Executive communication
 
 ## Attribution
 
-Completed by **Yayson Valencia** as part of the Udacity Future AWS Business Intelligence Engineer program. The author prepared and validated the datasets, designed the analytical model and dashboards, configured calculations and interactions, tested the natural-language experience, interpreted the findings, and documented methodological limitations.
+Completed by **Yayson Valencia** as part of the Udacity Future AWS Agentic AI Business Professional program. Amazon QuickSuite supported research and synthesis. The author defined the decision framework, configured the workflow, evaluated the evidence, reviewed the AI-generated outputs, documented limitations, and prepared the final recommendations.
 
 ## Data note
 
-Course-provided raw datasets and private environment links are not redistributed. The repository contains only the finished analytical artifacts and selected visual evidence.
+The raw Kaggle dataset is not redistributed in this repository. The linked source remains the authoritative location. No private QuickSuite access link, account information, or course-submission material is included.
