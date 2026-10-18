@@ -21,6 +21,35 @@ NovaTech needed a consolidated analytical view across disconnected CRM, marketin
 
 CRM was used as the anchor, with Marketing and Support left-joined on `account_id`. Multiple records per account produced many-to-many fan-out. Consequently, source datasets remained authoritative for additive totals, while the unified dataset was limited to matched-account relationships and distinct-identifier analysis.
 
+
+
+## Data Architecture
+
+The analytical design separates authoritative source-level metrics from cross-functional relationship analysis to prevent misleading results caused by many-to-many joins.
+
+```mermaid
+flowchart TD
+    A["CRM Deals: 499 Records"]
+    B["Marketing Campaigns: 2,240 Records"]
+    C["Support Tickets: 3,000 Records"]
+
+    A --> D["Account ID Joins"]
+    B --> D
+    C --> D
+
+    D --> E["Unified Dataset: 63,420 Rows / 63 Columns"]
+
+    A --> F["Authoritative Source KPIs"]
+    B --> F
+    C --> F
+
+    E --> G["Matched-Account and Distinct-ID Analysis"]
+
+    F --> H["Revenue Intelligence Dashboard"]
+    G --> H
+```
+
+
 ## Dashboard design
 
 ### Marketing Funnel
