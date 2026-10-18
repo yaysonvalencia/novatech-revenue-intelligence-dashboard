@@ -108,6 +108,21 @@ The dashboard provides a foundation for cross-functional decision-making across 
 - Avoided causal claims unsupported by the observational data
 - Enriched the natural-language Topic with descriptions, synonyms, filters, and outcome definitions
 
+## Project Evidence
+
+The following artifacts demonstrate the dashboard design, cross-functional analysis, and documented findings.
+
+| Artifact | Description |
+|---|---|
+| [Marketing Funnel Dashboard](dashboard-1.png) | Campaign performance, response rates, revenue attribution, and marketing efficiency |
+| [Sales Pipeline Dashboard](dashboard-2.png) | Sales opportunities, conversion outcomes, regional performance, and sales-cycle analysis |
+| [Customer Health Dashboard](dashboard-3.png) | Support ticket trends, resolution times, customer segmentation, and service performance |
+| [Complete Dashboard (PDF)](NovaTech_Revenue_Intelligence_Dashboard.pdf) | Consolidated three-sheet business intelligence dashboard |
+| [Project Report (PDF)](NovaTech_Revenue_Intelligence_Project_Report.pdf) | Analytical methodology, findings, validation controls, and recommendations |
+
+The dashboard was developed using Amazon Quick and SPICE. The artifacts document the analytical solution and its capabilities; they do not represent a live production deployment.
+
+
 ## Deliverables
 
 - [Three-sheet dashboard](NovaTech_Revenue_Intelligence_Dashboard.pdf)
