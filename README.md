@@ -84,6 +84,20 @@ flowchart TD
 - Regional process performance differed: the West averaged 70.09 days to close versus 62.87 days in the East, indicating a process-review opportunity rather than proof of a causal regional disadvantage.
 - Critical Enterprise support tickets averaged materially longer resolution time than Basic tickets, supporting deeper root-cause analysis of complexity, escalation paths, and staffing.
 
+## Business Applications
+
+The dashboard provides a foundation for cross-functional decision-making across marketing, sales, and customer support.
+
+- **Marketing investment:** Evaluate campaign efficiency, validate revenue attribution, and prioritize budget allocation based on reliable performance metrics.
+- **Sales optimization:** Identify differences in sales-cycle duration, monitor conversion performance, and investigate regional process improvement opportunities.
+- **Customer experience:** Assess support resolution times, identify potential service bottlenecks, and prioritize investigation of high-complexity customer segments.
+- **Executive performance management:** Consolidate marketing, sales, and support indicators into a consistent reporting framework while preserving authoritative source-level metrics.
+
+**Decision-making value:** The solution demonstrates how integrated business intelligence can support resource allocation, operational prioritization, and performance improvement without compromising analytical integrity.
+
+*These represent potential business applications of the dashboard, not implemented interventions or verified financial outcomes.*
+
+
 ## Analytical controls
 
 - Validated source data before import
